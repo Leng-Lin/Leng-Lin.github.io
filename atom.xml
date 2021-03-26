@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>Hexo</title>
-  
+  <title>冷麟的小站</title>
+  <icon>https://www.gravatar.com/avatar/63cd634001754c2ec7d415c495dbcf58</icon>
   
   <link href="https://leng-lin.github.io/atom.xml" rel="self"/>
   
   <link href="https://leng-lin.github.io/"/>
-  <updated>2021-03-26T07:51:38.377Z</updated>
+  <updated>2021-03-26T13:22:15.532Z</updated>
   <id>https://leng-lin.github.io/</id>
   
   <author>
     <name>Leng-Lin</name>
-    
+    <email>2363005031@qq.com</email>
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
@@ -21,7 +21,7 @@
     <link href="https://leng-lin.github.io/2021/03/26/monkey-kao-yan-ying-yu-yu-fa/"/>
     <id>https://leng-lin.github.io/2021/03/26/monkey-kao-yan-ying-yu-yu-fa/</id>
     <published>2021-03-26T07:40:45.000Z</published>
-    <updated>2021-03-26T07:51:38.377Z</updated>
+    <updated>2021-03-26T13:22:15.532Z</updated>
     
     
       
@@ -35,8 +35,6 @@
     
     
     <category term="English learning" scheme="https://leng-lin.github.io/categories/English-learning/"/>
-    
-    <category term="Grammer" scheme="https://leng-lin.github.io/categories/English-learning/Grammer/"/>
     
     
     <category term="English" scheme="https://leng-lin.github.io/tags/English/"/>
