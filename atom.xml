@@ -2,11 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>冷麟的小站</title>
   <icon>https://www.gravatar.com/avatar/63cd634001754c2ec7d415c495dbcf58</icon>
-  
+  <subtitle>冷麟的小站</subtitle>
   <link href="https://leng-lin.github.io/atom.xml" rel="self"/>
   
   <link href="https://leng-lin.github.io/"/>
-  <updated>2021-03-26T13:22:15.532Z</updated>
+  <updated>2021-03-27T06:33:05.544Z</updated>
   <id>https://leng-lin.github.io/</id>
   
   <author>
@@ -17,24 +17,203 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>重识语法</title>
-    <link href="https://leng-lin.github.io/2021/03/26/monkey-kao-yan-ying-yu-yu-fa/"/>
-    <id>https://leng-lin.github.io/2021/03/26/monkey-kao-yan-ying-yu-yu-fa/</id>
+    <title>八、长难句综合分析策略</title>
+    <link href="https://leng-lin.github.io/2021/03/27/chang-nan-ju-zong-he-fen-xi/"/>
+    <id>https://leng-lin.github.io/2021/03/27/chang-nan-ju-zong-he-fen-xi/</id>
+    <published>2021-03-27T06:20:45.000Z</published>
+    <updated>2021-03-27T06:33:05.544Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;script src=&quot;\assets\js\APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;h4 id=&quot;核心战术&quot;&gt;&lt;a href=&quot;#核心战术&quot; class=&quot;headerlink&quot; title=&quot;核心战术&quot;&gt;&lt;/a&gt;核心战术&lt;/h4&gt;&lt;p&gt;​   </summary>
+        
+      
+    
+    
+    
+    <category term="考研英语" scheme="https://leng-lin.github.io/categories/%E8%80%83%E7%A0%94%E8%8B%B1%E8%AF%AD/"/>
+    
+    
+    <category term="English" scheme="https://leng-lin.github.io/tags/English/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>七、特殊语法专题</title>
+    <link href="https://leng-lin.github.io/2021/03/27/te-shu-yu-fa/"/>
+    <id>https://leng-lin.github.io/2021/03/27/te-shu-yu-fa/</id>
+    <published>2021-03-27T06:18:45.000Z</published>
+    <updated>2021-03-27T06:32:15.580Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;script src=&quot;\assets\js\APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;h4 id=&quot;一-定语、主语、宾语的后置&quot;&gt;&lt;a href=&quot;#一-定语、主语、宾语的后置&quot; class=&quot;headerlink&quot; title=&quot;(一)</summary>
+        
+      
+    
+    
+    
+    <category term="考研英语" scheme="https://leng-lin.github.io/categories/%E8%80%83%E7%A0%94%E8%8B%B1%E8%AF%AD/"/>
+    
+    
+    <category term="English" scheme="https://leng-lin.github.io/tags/English/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>六、从句专题</title>
+    <link href="https://leng-lin.github.io/2021/03/27/cong-ju/"/>
+    <id>https://leng-lin.github.io/2021/03/27/cong-ju/</id>
+    <published>2021-03-27T06:16:45.000Z</published>
+    <updated>2021-03-27T06:31:45.404Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;script src=&quot;\assets\js\APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;p&gt;&lt;strong&gt;三大从句&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;从句=从属于主句的次要句子&lt;br&gt;   </summary>
+        
+      
+    
+    
+    
+    <category term="考研英语" scheme="https://leng-lin.github.io/categories/%E8%80%83%E7%A0%94%E8%8B%B1%E8%AF%AD/"/>
+    
+    
+    <category term="English" scheme="https://leng-lin.github.io/tags/English/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>五、并列句专题</title>
+    <link href="https://leng-lin.github.io/2021/03/27/bing-lie-ju/"/>
+    <id>https://leng-lin.github.io/2021/03/27/bing-lie-ju/</id>
+    <published>2021-03-27T06:14:45.000Z</published>
+    <updated>2021-03-27T06:31:32.549Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;script src=&quot;\assets\js\APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;p&gt;三大并列连词：and，but，or&lt;/p&gt;
+&lt;p&gt;可并列的对象：&lt;br&gt;    ① 同类单词、短语（普通并列）&lt;br&gt;    ②</summary>
+        
+      
+    
+    
+    
+    <category term="考研英语" scheme="https://leng-lin.github.io/categories/%E8%80%83%E7%A0%94%E8%8B%B1%E8%AF%AD/"/>
+    
+    
+    <category term="English" scheme="https://leng-lin.github.io/tags/English/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>四、非谓语专题</title>
+    <link href="https://leng-lin.github.io/2021/03/27/fei-wei-yu/"/>
+    <id>https://leng-lin.github.io/2021/03/27/fei-wei-yu/</id>
+    <published>2021-03-27T06:12:45.000Z</published>
+    <updated>2021-03-27T06:30:40.465Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;script src=&quot;\assets\js\APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;p&gt;&lt;strong&gt;三大非谓语&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;​    to do（不定式）强调未来性或目的性&lt;/p&gt;
+&lt;p&gt;​    doing</summary>
+        
+      
+    
+    
+    
+    <category term="考研英语" scheme="https://leng-lin.github.io/categories/%E8%80%83%E7%A0%94%E8%8B%B1%E8%AF%AD/"/>
+    
+    
+    <category term="English" scheme="https://leng-lin.github.io/tags/English/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>三、简单句-词性与成分</title>
+    <link href="https://leng-lin.github.io/2021/03/27/jian-dan-ju/"/>
+    <id>https://leng-lin.github.io/2021/03/27/jian-dan-ju/</id>
+    <published>2021-03-27T06:10:45.000Z</published>
+    <updated>2021-03-27T06:30:03.850Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;script src=&quot;\assets\js\APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;h3 id=&quot;一-简单句与复合句&quot;&gt;&lt;a href=&quot;#一-简单句与复合句&quot; class=&quot;headerlink&quot; title=&quot;(一) 简单句与复合句&quot;&gt;&lt;/a&gt;(一)</summary>
+        
+      
+    
+    
+    
+    <category term="考研英语" scheme="https://leng-lin.github.io/categories/%E8%80%83%E7%A0%94%E8%8B%B1%E8%AF%AD/"/>
+    
+    
+    <category term="English" scheme="https://leng-lin.github.io/tags/English/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>二、谓语专题</title>
+    <link href="https://leng-lin.github.io/2021/03/27/wei-yu-zhuan-ti/"/>
+    <id>https://leng-lin.github.io/2021/03/27/wei-yu-zhuan-ti/</id>
+    <published>2021-03-27T06:08:45.000Z</published>
+    <updated>2021-03-27T06:28:54.602Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;script src=&quot;\assets\js\APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;h3 id=&quot;1-基本时态语态&quot;&gt;&lt;a href=&quot;#1-基本时态语态&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="考研英语" scheme="https://leng-lin.github.io/categories/%E8%80%83%E7%A0%94%E8%8B%B1%E8%AF%AD/"/>
+    
+    
+    <category term="English" scheme="https://leng-lin.github.io/tags/English/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>一、重识语法</title>
+    <link href="https://leng-lin.github.io/2021/03/26/chong-shi-yu-fa/"/>
+    <id>https://leng-lin.github.io/2021/03/26/chong-shi-yu-fa/</id>
     <published>2021-03-26T07:40:45.000Z</published>
-    <updated>2021-03-26T13:22:15.532Z</updated>
+    <updated>2021-03-27T06:29:10.145Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;h3 id=&quot;考研语法学什么？&quot;&gt;&lt;a href=&quot;#考研语法学什么？&quot; class=&quot;headerlink&quot;</summary>
+    <summary type="html">&lt;script src=&quot;\assets\js\APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;h3 id=&quot;考研语法学什么？&quot;&gt;&lt;a href=&quot;#考研语法学什么？&quot; class=&quot;headerlink&quot;</summary>
         
       
     
     
     
-    <category term="English learning" scheme="https://leng-lin.github.io/categories/English-learning/"/>
+    <category term="考研英语" scheme="https://leng-lin.github.io/categories/%E8%80%83%E7%A0%94%E8%8B%B1%E8%AF%AD/"/>
     
     
     <category term="English" scheme="https://leng-lin.github.io/tags/English/"/>
@@ -53,7 +232,7 @@
       
         
         
-    <summary type="html">&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot;&gt;documentation&lt;/a&gt;</summary>
+    <summary type="html">&lt;script src=&quot;\assets\js\APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a</summary>
         
       
     
