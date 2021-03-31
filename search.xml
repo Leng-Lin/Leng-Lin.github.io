@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>C陷阱与缺陷读书笔记 Part.1</title>
+      <link href="2021/03/31/c-xian-jing-yu-que-xian-part.1/"/>
+      <url>2021/03/31/c-xian-jing-yu-que-xian-part.1/</url>
+      
+        <content type="html"><![CDATA[<script src="\assets\js\APlayer.min.js"> </script><h1 id="第1章-词法“陷阱”"><a href="#第1章-词法“陷阱”" class="headerlink" title="第1章 词法“陷阱”"></a>第1章 词法“陷阱”</h1><p>​    符号指的是程序的一个基本组成单元，其作用相当于句子中的单词。而组成符号的字符序列则不同，同一组字符序列在某个上下文环境中属于一个符号，而在另一种上下文环境可能属于完全不同的另一种符号。</p><blockquote><p>如p-&gt;s = “-&gt;”，两个“-”的含义完全不同。</p><p>前者是符号-&gt;的组成部分，后者是字符串的组成部分。</p></blockquote><h2 id="1-1-不同于"><a href="#1-1-不同于" class="headerlink" title="1.1 =不同于=="></a>1.1 =不同于==</h2><p>“=”为赋值运算符，“==”为关系运算符。<br>我们有时候写代码会无意中将“==”写成“=”，如：</p><figure class="highlight c"><table><tbody><tr><td class="code"><pre><span class="line"><span class="keyword">if</span> (x = y)</span><br><span class="line">    <span class="keyword">break</span>;</span><br><span class="line"><span class="comment">/*本意是比较x与y是否相等，相等则跳出循环，而写成“=”则成了，将y的值赋值给x，</span></span><br><span class="line"><span class="comment">并且检查该值是否为0。*/</span></span><br></pre></td></tr></tbody></table></figure><figure class="highlight c"><table><tbody><tr><td class="code"><pre><span class="line"><span class="keyword">while</span>(c = <span class="string">' '</span> || c == <span class="string">'\t'</span> || c == <span class="string">'\n'</span>)</span><br><span class="line">    c = getc(f);</span><br><span class="line"><span class="comment">/* 因为 = 的优先级比关系运算符低，这句实际上是将' ' || c == '\t' || c == '\n' 的值</span></span><br><span class="line"><span class="comment">赋值给c，再判断值是否为0，因为‘ ’不等于0，这就导致赋给C的值恒为1，循环会一直进行下去直到</span></span><br><span class="line"><span class="comment">整个文件结束。*/</span></span><br></pre></td></tr></tbody></table></figure><h2 id="1-2-amp-和-不同于-amp-amp-和"><a href="#1-2-amp-和-不同于-amp-amp-和" class="headerlink" title="1.2 &amp;和|不同于&amp;&amp;和||"></a>1.2 &amp;和|不同于&amp;&amp;和||</h2><p>​    按位运算与逻辑运算也有不同，按位运算符会将每位进行运算后，产生一个值，而逻辑运算符是将每一位进行比较，最后得到0或1，如果使用错误会导致很多意想不到的错误或看起来正常的隐患。</p><h2 id="1-3-词法分析中的“贪心法”"><a href="#1-3-词法分析中的“贪心法”" class="headerlink" title="1.3 词法分析中的“贪心法”"></a>1.3 词法分析中的“贪心法”</h2><p>​    C语言中的某些符号如“/”、“*”、和“=”，只有一个字符长，称为单字符符号，而类似于“*/“、”==“以及标识符，包括了多个字符，称为多字符符号。C编译器读入字符/后，又跟了一个字符*，那么编译器就要做出判断，是分开还是将他们合起来作为一个符号对待。<br>​    C语言处理这种情况可以归纳为：每一个符号应该包含尽可能多的字符。即，程序从左到右一个一个字符地读入，如果字符可能组成一个符号，那么再读入下一个字符，判断已经读入的两个字符组成的字符串是否可能是一个符号的组成部分；如果可以，继续读入下一个字符，重复上述判断，直到读入的字符组成的字符串已不再可能组成一个有意义的符号。<br>​    需要注意<span style="color:Red;background:背景颜色;font-size:文字大小;font-family:字体;"><strong>除了字符与字符常量，符号的中间不能嵌有空白(空格符、制表符和换行符)</strong></span>。如：==是单个符号，而== (是个空格)是两个符号。<br>例子：</p><figure class="highlight c"><table><tbody><tr><td class="code"><pre><span class="line">a---b</span><br><span class="line">与</span><br><span class="line">a -- - b 含义相同，而与</span><br><span class="line">a - -- b 含义不同。</span><br></pre></td></tr></tbody></table></figure><p>​    同样，如果/是判断下一个符号读入的第一个字符，而它后面紧跟着*，则<strong>无论上下文如何，这两个字符都会被当做一个符号“/*”</strong>，表示一段注释的开始。</p><p>​    所以如下语句：<br>​        y = x/*p     /* P指向除数 */<br>​    本意是将x除以p指向的值，商赋给y，而实际上编译器会将/*理解为注释的开始，编译器将不断读入字符，直到*/出现为止。</p><p>​    所以将语句改写成<br>​        y = x / *p 或<br>​        y = x/(*p)<br>​    才是原意。</p><p>​    老版本的C语言允许使用=+来代表现在+=的含义。这种编译器会将<br>​        a=-1;<br>​    理解为<br>​        a =- 1;<br>​    即<br>​        a = a - 1;<br>(怪不得平时最好要用空格分开，我以前最喜欢连着写了…. 不过现在使用的编译器好像都没有这种特性了。)<br>​    那么在这种编译器下，上面提到的<br>​        a=/*b；<br>​    会被当做<br>​        a =/ *b;<br>​    即<br>​        a = a / *b；</p><h2 id="1-4-整形常量"><a href="#1-4-整形常量" class="headerlink" title="1.4 整形常量"></a>1.4 整形常量</h2><p>​    如果一个整形常量的第一个字符是数字0，那么该常量会被视作八进制数。</p><h2 id="1-5-字符与字符串"><a href="#1-5-字符与字符串" class="headerlink" title="1.5 字符与字符串"></a>1.5 字符与字符串</h2><p>​    C语言中单引号和双引号含义不同，切勿弄混。<br>​    单引号引起的一个字符实际上代表一个<strong>整数</strong>，整数值对应于该字符在编译器采用的字符集中的序列值。<br>​    双引号引起的字符串，代表的是一个<strong>指向无名数组起始字符的指针</strong>，该数组被双引号之间的字符以及一个额外的二进制为0的字符 ‘/0’初始化。</p><figure class="highlight c"><table><tbody><tr><td class="code"><pre><span class="line"><span class="built_in">printf</span>(<span class="string">"Hello World\n"</span>);</span><br><span class="line">和</span><br><span class="line"><span class="keyword">char</span> hello[] = {<span class="string">'H'</span>, <span class="string">'e'</span>, <span class="string">'l'</span>, <span class="string">'l'</span>, <span class="string">'o'</span>, <span class="string">' '</span>, <span class="string">'W'</span>, <span class="string">'o'</span>, <span class="string">'r'</span>, <span class="string">'l'</span>, <span class="string">'d'</span>, <span class="string">'\n'</span>, <span class="number">0</span>};</span><br><span class="line"><span class="built_in">printf</span>(hello);</span><br><span class="line">是等效的。</span><br></pre></td></tr></tbody></table></figure>]]></content>
+      
+      
+      <categories>
+          
+          <category> C陷阱与缺陷 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> C语言 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>八、长难句综合分析策略</title>
       <link href="2021/03/27/chang-nan-ju-zong-he-fen-xi/"/>
       <url>2021/03/27/chang-nan-ju-zong-he-fen-xi/</url>
